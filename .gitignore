@@ -1,0 +1,8 @@
+*.exe
+*.sln
+*.vcxproj*
+*.txt
+**/x64
+**/.idea
+**/.vs
+*.pdf
