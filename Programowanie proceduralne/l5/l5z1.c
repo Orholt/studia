@@ -9,7 +9,7 @@ struct struktura {
 int main() {
     // p1
     struct struktura ** p1; // tablica wskaźników
-    p1 = malloc(sizeof (int *) * 3);
+    p1 = malloc(sizeof (struct struktura *) * 3);
     p1[1] = NULL;
 
 
