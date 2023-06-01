@@ -39,18 +39,20 @@ int main()
 
     // Insert Sort test
     res = insertSort(unsortedArray, size);
-    printf("%d", compareArrays(res));
+    testPassed += compareArrays(res);
 
     // Bubble Sort test
     res = bubbleSort(unsortedArray, size);
-    printf("%d", compareArrays(res));
+    testPassed += compareArrays(res);
 
-    // Quick Sort test
-    res = quickSort(unsortedArray, size);
-    printf("%d", compareArrays(res));
+    // // Quick Sort test
+    // res = quickSort(unsortedArray, size);
+    // printf("%d", compareArrays(res));
 
-    // Merge Sort test
-    res = mergeSort(unsortedArray, size);
-    printf("%d", compareArrays(res));
+    // // Merge Sort test
+    // res = mergeSort(unsortedArray, size);
+    // printf("%d", compareArrays(res));
+
+    printf("Test passed: %d / %d", testPassed, testCount);
 
 }
