@@ -1,6 +1,6 @@
 # Zawartość folderu
 ## Algorytmy sortujące
-### Insert sort
+### Insert Sort
 Prosty algorytm sortowania, który działa poprzez porównywanie kolejnych elementów listy i wstawianie każdego elementu na odpowiednie miejsce w już posortowanej części listy.
 
 **Zasada działania:**
@@ -20,7 +20,7 @@ Powyższe kroki są powtarzane dla każdego kolejnego elementu w nieposortowanej
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif" height="200">
 
-### Bubble sort
+### Bubble Sort
 Metoda ta polega na wielokrotnym przechodzeniu przez listę elementów i zamianie miejscami sąsiednich par, jeśli są one w niewłaściwej kolejności.
 
 **Zasada działania**
@@ -38,7 +38,7 @@ Metoda ta polega na wielokrotnym przechodzeniu przez listę elementów i zamiani
 ### Quick sort
 Quick sort polega na podziale tablicy na mniejsze części na podstawie porównań elementów i rekurencyjnym sortowaniu tych części.
 
-**Zasada działania - Quick sort**
+**Zasada działania - Quick Sort**
 
 1. Wybierz jeden element z tablicy jako punkt odniesienia, który nazywamy "pivotem". Można wybrać dowolny element z tablicy, ale zazwyczaj stosuje się pierwszy lub ostatni element.
 
@@ -75,7 +75,7 @@ Po zakończeniu rekurencji, wszystkie części tablicy zostaną posortowane, a t
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif" height="200">
 
-### Merge sort
+### Merge Sort
 Merge sort to algorytm sortowania, który działa na zasadzie "dziel i łącz". Jego działanie polega na rekurencyjnym dzieleniu listy elementów na mniejsze części, a następnie scalaniu ich w odpowiedniej kolejności.
 
 **Zasada działania**
