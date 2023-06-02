@@ -51,8 +51,8 @@ int main()
     testPassed += compareArrays(res);
 
     // // Merge Sort test
-    // res = mergeSort(unsortedArray, size);
-    // printf("%d", compareArrays(res));
+    res = mergeSort(unsortedArray, 0, size-1);
+    testPassed += compareArrays(res);
 
     printf("Test passed: %d / %d", testPassed, testCount);
 
