@@ -1,39 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct stos
-{
-	struct stos * ptr;
-	int value;
+struct stack {
+    int* data;   
+    int size; 
+    int capacity; 
 };
 
-void push (struct stos **gwsk, int n)
-{
-	struct stos *y = (struct stos *) malloc (sizeof (struct stos));
-	y->ptr =0;
-	y-> value = n;
-	if (*gwsk != 0)
-	{
-		y->ptr=*gwsk;
-	}
-	*gwsk = y;
+void init(struct stack* stack, int capacity) {
+    stack->data = (int*)malloc(capacity * sizeof(int));
+    stack->size = 0;
+    stack->capacity = capacity;
 }
 
-int pop (struct stos **gwsk)
-{
-	if (*gwsk == 0)
-	{
-		printf ("Stos jest pusty\n");
-		return 0;
-	}
-	else
-	{
-		int wartosc = (*gwsk)->value;
-		struct stos * wskTmp = *gwsk;
-		*gwsk = wskTmp -> ptr;
-		free(wskTmp);
-		*gwsk = wskTmp;
-		return (wartosc);
-	}
-	
+void push(struct stack* stack, int value) {
+    if (stack->size == stack->capacity) {
+        // za dużo elementów
+        return;
+    }
+
+    stack->data[stack->size++] = value;
+}
+
+int pop(struct stack* stack) {
+    if (stack->size == 0) {
+        return -1; // nie ma nic do wycinki
+    }
+
+    return stack->data[--stack->size];
 }
