@@ -44,3 +44,4 @@ int *insertSort(int *array, int size)
 
     return array;
 }
+
