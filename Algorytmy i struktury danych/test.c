@@ -46,14 +46,17 @@ int main()
     res = bubbleSort(unsortedArray, size);
     testPassed += compareArrays(res);
 
-    // // Quick Sort test
+    // Quick Sort test
     res = quickSort(unsortedArray, 0, size-1);
     testPassed += compareArrays(res);
 
-    // // Merge Sort test
+    // Merge Sort test
     res = mergeSort(unsortedArray, 0, size-1);
     testPassed += compareArrays(res);
 
     printf("Test passed: %d / %d", testPassed, testCount);
+    testCount += 2;
+    // Testy list
+
 
 }
