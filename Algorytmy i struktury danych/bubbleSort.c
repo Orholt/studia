@@ -6,18 +6,6 @@
 int *bubbleSort(int *array, int size);
 
 /**
- * Funkcja pomocnicza - zamienia miejscami elementy w tablicy
- * @param xp wskaźnik do elementu tablicy
- * @param xp wskaźnik do elementu tablicy
-*/
-void swap(int* xp, int* yp)
-{
-    int temp = *xp;
-    *xp = *yp;
-    *yp = temp;
-}
-
-/**
  * @param array tablica do posortowania
  * @param size rozmiar tablicy
  * @return wskaźnik do posortowanej tablicy

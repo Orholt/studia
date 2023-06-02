@@ -2,6 +2,7 @@
 
 // Import funkcji implmenetująch sortowanie
 #include "insertSort.c"
+#include "swap.c"
 #include "bubbleSort.c"
 #include "quickSort.c"
 #include "mergeSort.c"
@@ -46,8 +47,8 @@ int main()
     testPassed += compareArrays(res);
 
     // // Quick Sort test
-    // res = quickSort(unsortedArray, size);
-    // printf("%d", compareArrays(res));
+    res = quickSort(unsortedArray, 0, size-1);
+    testPassed += compareArrays(res);
 
     // // Merge Sort test
     // res = mergeSort(unsortedArray, size);
