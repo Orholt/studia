@@ -17,6 +17,8 @@ int main() {
 
     int lineCount = 0; // Counter for the number of lines read
 
+    // * WITH FSCANF while(fscanf(fp,"%s",item) == 1)   **//
+
     // Read lines until the end of the file is reached
     while (fgets(line, MAX_LINE_LENGTH, file) != NULL) {
         lines[lineCount] = malloc(strlen(line) + 1); // Allocate memory for the line
